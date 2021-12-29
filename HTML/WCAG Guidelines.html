@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WCAG Conformance Testing, Detailed Methodology</title>
+    <link rel="stylesheet" href="../CSS/WCAG_Guidelines.css">
+</head>
+
+<body>
+    <h1>WCAG Conformance Testing, Detailed Methodology</h1>
+    <P>Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive
+        technologies.</P>
+    <h2>4. Robust</h2>
+    <h3>4.1.1.Parsing</h3>
+    <h4>Overview</h4>
+    <p>Long gone are the days when WCAG required markup to be 100% free of syntax validation errors, but WCAG 2.0 still
+        requires the code to pass a subset of applicable validation rules to ensure browsers and assistive technologies
+        can render the content reliably, without posing potential accessibility barriers for users. This subset is
+        limited to four general rules, which include making sure Web documents are nested according to specification,
+        elements do not contain duplicate attributes, ID attribute values are unique on any given page and opening and
+        closing tags are used according to specification. The general intent of this requirement also includes
+        specifying a document type declaration (doctype) to facilitate document validation, using HTML elements in
+        accordance with specifications so their intended semantics are exposed to browsers and assistive technology,
+        avoiding features not defined in HTML and XHTML to prevent unexpected accessibility barriers and refraining from
+        using deprecated HTML tags and attributes.</p>
+    <p><strong>Note:</strong>Further information is available at the W3C, in the <a target="_blank"
+            href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html">"Understanding SC 4.1.1"<img
+            src="..\Images\new-window.png" alt="opens in a new window" class="new_window" width="13"
+            height="13"/></a> document.</p>
+    <h4>Who Benefits</h4>
+    <p>Users of assistive technologies and keyboard-only users are the ones who benefit the most from this requirement.
+        As examples, duplicate id values might cause content from being operated or navigated correctly, and failure to
+        properly close HTML tags may prevent assistive technology from reliably conveying the nature of the markup to
+        users, thereby making it difficult for them to comprehend or even navigate through content. The overall goal is
+        to ensure a robust behavior across browsers and assistive technologies.</p>
+    <h4>Reminders</h4>
+    <p>Keep the following in mind when providing accessible solutions for this success criterion.</p>
+    <ol>
+        <li><strong>Complete Start and End Tags:</strong>Elements MUST have complete start and end tags.</li>
+        <li><strong>Nested According to Specification:</strong>Elements MUST be nested according to their
+            specifications.</li>
+        <li><strong>Duplicate Attributes:</strong>Elements MUST NOT contain duplicate attributes.</li>
+        <li><strong>Unique IDs:</strong>Element IDs MUST be unique.</li>
+    </ol>
+</html>

@@ -1,0 +1,25 @@
+
+h1{
+    font-size: 18pt;
+}
+h2{
+    font-size: 16pt;
+}
+h3{
+    font-size: 14pt;
+}
+h4{
+    font-size: 14pt;
+}
+p{
+    font-size: 14pt;
+}
+a:hover{
+background-color: #fdf6e7;
+
+}
+ol{
+    
+    background: #ececec;
+    background-clip: content-box;
+}
